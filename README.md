@@ -4,9 +4,9 @@ Tre piccoli programmi C che riproducono versioni semplificate di comandi Unix, u
 
 | File | Cosa fa | Chiamate consentite |
 |---|---|---|
-| `mysleep.c` | Dorme per N secondi (comando di prova) | — |
-| `mytimeout.c` | Esegue un comando con un limite di tempo | `fork`, `execvp`, `waitpid`, `kill`, `usleep` |
-| `mycp.c` | Copia un file in un altro a blocchi | `open`, `read`, `write`, `close` |
+| `esercizio1.c` | Dorme per N secondi (comando di prova) | — |
+| `esercizio2.c` | Esegue un comando con un limite di tempo | `fork`, `execvp`, `waitpid`, `kill`, `usleep` |
+| `esercizio3.c` | Copia un file in un altro a blocchi | `open`, `read`, `write`, `close` |
 
 I sorgenti sono commentati in dettaglio. Prima di ogni system call, il commento riporta la sinossi, il valore di ritorno citato dalla pagina `man` (man-pages 6.7, Linux) e il modo in cui quel valore viene usato nel codice.
 
