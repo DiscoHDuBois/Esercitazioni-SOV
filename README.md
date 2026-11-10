@@ -35,4 +35,5 @@ Il numero indica la sezione:
 - **3**: funzioni della libreria C (`execvp` e `usleep` stanno qui);
 - **7**: panoramiche, come l'elenco dei segnali.
 
-Se le pagine di sezione 2 e 3 mancano, vanno installate... `man-pages` su Arch, `manpages-dev` su Debian e Ubuntu.
+Se le pagine di sezione 2 e 3 mancano, vanno installate... `man-pages` su Arch, `manpages-dev` su Debian e Ubuntu. Per Fedora:`sudo dnf install man man-pages man-db`.
+Se continuano a mancare controllare che la configurazione di dnf non abbia vincoli per saltare la documentazione: `grep -rn tsflags /etc/dnf/`
