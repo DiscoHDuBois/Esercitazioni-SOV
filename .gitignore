@@ -1,0 +1,12 @@
+core
+core.*
+.vscode/
+.idea/
+*.swp
+*~
+.cache/
+compile_command.json
+*tmp
+a.out
+*.o
+
