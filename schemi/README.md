@@ -1,7 +1,7 @@
 # Schemi per costruzione con System Calls
 
 ## descrizione file
-| File | Cosa fa |
+| File | Cos'è |
 |---|---|
 | `ciclocopia.c` | Ciclo di copia usato in mycp, mycat, myhead. Varia solo da dove si legge il file, dove si scrive e dove ci si ferma |
 | `chipar.c` | Prima tutte le fork, poi le attese waitpid(-1) restituisce il prossimo figlio che termina, con kill si fermano gli altri |
