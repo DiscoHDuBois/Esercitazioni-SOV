@@ -8,12 +8,12 @@ static int copia(int in, int out) {
     char buf[BUF_SIZE];
     ssize_t n;
     while ((n = read(in, buf, BUF_SIZE)) > 0) {
-        ssize_t off;
+        ssize_t off = 0;
         while (off < n) {
             ssize_t w = write(out, buf + off, n - off);
             if (w < 0) {
                 perror("write");
-                return 1;
+                return -1;
             }
             off += w;
         }
